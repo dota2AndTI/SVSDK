@@ -30,7 +30,25 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SVSDK/Classes/**/*'
+  s.subspec 'Common' do |ss|
+    ss.source_files = 'SVSDK/Common/*.{h,m}'
+    ss.dependency 'Ads-CN','3.8.1.0'
+    ss.vendored_frameworks = 'SVSDK/Common/ABUAdSDK.framework'
+  end
+  s.subspec 'Google' do |ss|
+    ss.source_files = 'SVSDK/Google/*.{h,m}'
+    ss.dependency 'Google-Mobile-Ads-SDK','8.8.0'
+    ss.dependency 'SVSDK/Common'
+  end
+  s.subspec 'ABU' do |ss|
+    ss.source_files = 'SVSDK/ABU/*.{h,m}'
+    ss.dependency 'SVSDK/Common'
+    
+  end
+  s.subspec 'BU' do |ss|
+    ss.source_files = 'SVSDK/BU/*.{h,m}'
+    ss.dependency 'SVSDK/Common'
+  end
   
   # s.resource_bundles = {
   #   'SVSDK' => ['SVSDK/Assets/*.png']

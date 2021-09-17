@@ -1,0 +1,63 @@
+{
+  "name": "SVSDK",
+  "version": "0.1.0",
+  "summary": "A short description of SVSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dota2AndTI/SVSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dota2AndTI": "706530573@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/dota2AndTI/SVSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "subspecs": [
+    {
+      "name": "Common",
+      "source_files": "SVSDK/Common/*.{h,m}",
+      "dependencies": {
+        "Ads-CN": [
+          "3.8.1.0"
+        ]
+      },
+      "vendored_frameworks": "SVSDK/Common/ABUAdSDK.framework"
+    },
+    {
+      "name": "Google",
+      "source_files": "SVSDK/Google/*.{h,m}",
+      "dependencies": {
+        "Google-Mobile-Ads-SDK": [
+          "8.8.0"
+        ],
+        "SVSDK/Common": [
+
+        ]
+      }
+    },
+    {
+      "name": "ABU",
+      "source_files": "SVSDK/ABU/*.{h,m}",
+      "dependencies": {
+        "SVSDK/Common": [
+
+        ]
+      }
+    },
+    {
+      "name": "BU",
+      "source_files": "SVSDK/BU/*.{h,m}",
+      "dependencies": {
+        "SVSDK/Common": [
+
+        ]
+      }
+    }
+  ]
+}

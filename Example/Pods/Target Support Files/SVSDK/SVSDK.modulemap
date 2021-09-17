@@ -1,0 +1,6 @@
+framework module SVSDK {
+  umbrella header "SVSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
