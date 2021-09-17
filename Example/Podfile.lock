@@ -57,8 +57,8 @@ PODS:
     - SVSDK/Common
   - SVSDK/Common (0.1.0):
     - Ads-CN (= 3.8.1.0)
-  - SVSDK/Google (0.1.0):
     - Google-Mobile-Ads-SDK (= 8.8.0)
+  - SVSDK/Google (0.1.0):
     - SVSDK/Common
 
 DEPENDENCIES:
@@ -86,7 +86,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 3df19e3c24f7bbc291d8b5809aa6b0d41e642437
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  SVSDK: 42e6a10671a6b3eff8269f826216db9ba570e937
+  SVSDK: ada23e5e18d2a09b77fdf565a9316e46a0e2d3cf
 
 PODFILE CHECKSUM: b96352dace3012a89efc60fbc003be346ec56aa7
 

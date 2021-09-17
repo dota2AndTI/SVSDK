@@ -27,17 +27,17 @@ TODO: Add long description of the pod here.
   s.author           = { 'dota2AndTI' => '706530573@qq.com' }
   s.source           = { :git => 'https://github.com/dota2AndTI/SVSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+# 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
   s.ios.deployment_target = '9.0'
 
   s.subspec 'Common' do |ss|
     ss.source_files = 'SVSDK/Common/*.{h,m}'
     ss.dependency 'Ads-CN','3.8.1.0'
+    ss.dependency 'Google-Mobile-Ads-SDK','8.8.0'
     ss.vendored_frameworks = 'SVSDK/Common/ABUAdSDK.framework'
   end
   s.subspec 'Google' do |ss|
     ss.source_files = 'SVSDK/Google/*.{h,m}'
-    ss.dependency 'Google-Mobile-Ads-SDK','8.8.0'
     ss.dependency 'SVSDK/Common'
   end
   s.subspec 'ABU' do |ss|
